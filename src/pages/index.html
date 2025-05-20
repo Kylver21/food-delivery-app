@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App - Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu estilo general -->
+    <link rel="stylesheet" href="/src/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- NAVBAR Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Food Delivery App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="restaurants.html">Restaurantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="orders.html">Pedidos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Carrito</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section class="py-5 text-center bg-danger text-white">
+            <div class="container">
+                <h1 class="display-5 fw-bold">Bienvenido a nuestra App de Delivery</h1>
+                <p class="lead mb-4">Descubre los mejores restaurantes y disfruta de tus comidas favoritas en la
+                    comodidad de tu hogar.</p>
+                <a href="restaurants.html" class="btn btn-warning btn-lg">Explorar Restaurantes</a>
+            </div>
+        </section>
+
+        <!-- CATEGORÍAS -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4 text-center">Categorías</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-3">
+                        <article class="card h-100 text-center border-danger">
+                            <img src="/src/assets/img/restaurantes.jpeg" class="card-img-top p-3 rounded-circle"
+                                alt="Restaurantes" style="height:120px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurantes</h5>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="card h-100 text-center border-success">
+                            <img src="/src/assets/img/supermercado.avif" class="card-img-top p-3 rounded-circle"
+                                alt="Supermercados" style="height:120px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Supermercados</h5>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="card h-100 text-center border-primary">
+                            <img src="/src/assets/img/farmacia.jpg" class="card-img-top p-3 rounded-circle"
+                                alt="Farmacia" style="height:120px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Farmacia</h5>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="card h-100 text-center border-warning">
+                            <img src="/src/assets/img/regalos.jpg" class="card-img-top p-3 rounded-circle" alt="Regalos"
+                                style="height:120px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Regalos</h5>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESTAURANTES DESTACADOS -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center">Restaurantes Destacados</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <article class="card h-100 shadow-sm border-0">
+                            <div class="position-relative">
+                                <img src="/src/assets/img/restaurante1.jpg" class="card-img-top rounded-4"
+                                    alt="Restaurante 1" style="height:170px;object-fit:cover;">
+                                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Destacado</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">La Panka</h5>
+                                <p class="card-text">Parrillas y pollos a la brasa</p>
+                                <a href="restaurants.html" class="btn btn-outline-danger btn-sm">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <article class="card h-100 shadow-sm border-0">
+                            <div class="position-relative">
+                                <img src="/src/assets/img/restaurante2.jpg" class="card-img-top rounded-4"
+                                    alt="Restaurante 2" style="height:170px;object-fit:cover;">
+                                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Destacado</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Siete Sopas</h5>
+                                <p class="card-text">Sopas y comida criolla</p>
+                                <a href="restaurants.html" class="btn btn-outline-danger btn-sm">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <article class="card h-100 shadow-sm border-0">
+                            <div class="position-relative">
+                                <img src="/src/assets/img/restaurante3.jpg" class="card-img-top rounded-4"
+                                    alt="Restaurante 3" style="height:170px;object-fit:cover;">
+                                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Destacado</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Tanta</h5>
+                                <p class="card-text">Comida peruana gourmet</p>
+                                <a href="restaurants.html" class="btn btn-outline-danger btn-sm">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMOCIONES -->
+        <aside class="py-5 bg-warning bg-opacity-25">
+            <div class="container">
+                <h2 class="mb-4 text-center">Promociones Especiales</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <article class="card h-100 shadow-sm border-0 text-center">
+                            <div class="position-relative">
+                                <img src="/src/assets/img/promo1.webp" class="card-img-top rounded-4" alt="Promo 1"
+                                    style="height:140px;object-fit:cover;">
+                                <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2">2x1</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">2x1 en pizzas</h5>
+                                <p class="card-text">Solo hoy en restaurantes seleccionados.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <article class="card h-100 shadow-sm border-0 text-center">
+                            <div class="position-relative">
+                                <img src="/src/assets/img/promo2.jpg" class="card-img-top rounded-4" alt="Promo 2"
+                                    style="height:140px;object-fit:cover;">
+                                <span class="badge bg-danger position-absolute top-0 start-0 m-2">Gratis</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Delivery gratis</h5>
+                                <p class="card-text">En tu primer pedido usando la app.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- FOOTER Bootstrap style -->
+    <footer class="bg-danger text-white mt-5 pt-4 pb-2">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">Información</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">Comidas y cadenas</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Top comidas</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Top cadenas</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Top ciudades</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">Negocios</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Registra tu negocio</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Centro de Socios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">Colaboradores</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Para tus colaboradores</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <small>Food Delivery App © 2025</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

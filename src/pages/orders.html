@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Pedidos - Food Delivery App</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Include Navbar -->
+    <div id="navbar"></div>
+
+    <main class="container py-5">
+        <h1 class="text-center mb-4">Mis Pedidos</h1>
+        <div id="orders-list" class="row">
+            <!-- Orders will be dynamically populated here -->
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // JavaScript to load header, navbar, and footer
+        document.getElementById('header').innerHTML = await (await fetch('../components/header.html')).text();
+        document.getElementById('navbar').innerHTML = await (await fetch('../components/navbar.html')).text();
+        document.getElementById('footer').innerHTML = await (await fetch('../components/footer.html')).text();
+
+        // Function to fetch and display orders
+        async function loadOrders() {
+            // Simulated fetch call to get orders
+            const orders = [
+                { id: 1, restaurant: 'Pizza Place', status: 'Entregado', date: '2023-10-01' },
+                { id: 2, restaurant: 'Sushi Spot', status: 'En camino', date: '2023-10-05' },
+                { id: 3, restaurant: 'Burger Joint', status: 'Cancelado', date: '2023-10-10' }
+            ];
+
+            const ordersList = document.getElementById('orders-list');
+            orders.forEach(order => {
+                const orderCard = document.createElement('div');
+                orderCard.className = 'col-md-4 mb-4';
+                orderCard.innerHTML = `
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">${order.restaurant}</h5>
+                            <p class="card-text">Estado: ${order.status}</p>
+                            <p class="card-text"><small class="text-muted">Fecha: ${order.date}</small></p>
+                        </div>
+                    </div>
+                `;
+                ordersList.appendChild(orderCard);
+            });
+        }
+
+        loadOrders();
+    </script>
+</body>
+</html>
