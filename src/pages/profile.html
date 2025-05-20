@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Food Delivery App</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Profile Section -->
+    <div class="container">
+        <h1 class="text-center">Mi Perfil</h1>
+        <form id="profileForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Dirección de Entrega</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        </form>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
